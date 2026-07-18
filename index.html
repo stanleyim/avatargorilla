@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Avatar Gorilla — AI Comedy Shorts from Thailand 🦍🇹🇭</title>
+<meta name="description" content="Avatar Gorilla is an AI-powered comedy channel featuring three gorilla siblings — Kong, Joonie, and Rilla — living human lives in Bangkok, Thailand. New shorts almost every day." />
+<meta name="keywords" content="Avatar Gorilla, AI comedy, Thailand shorts, gorilla siblings, Bangkok, YouTube Shorts, Thai comedy, funny gorilla" />
+<meta property="og:title" content="Avatar Gorilla — AI Comedy Shorts from Thailand" />
+<meta property="og:description" content="Three gorilla siblings. One human world. Every day." />
+<meta property="og:image" content="kong-hero.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦍</text></svg>" />
+<style>
+  :root {
+    --jungle: #10221a;
+    --jungle-2: #0a1610;
+    --gold: #f2b84b;
+    --cream: #fff6e8;
+    --pink: #ffd6e0;
+    --red: #ff0000;
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans Thai", sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; height: auto; display: block; }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--pink) 0%, #78283f 45%, var(--jungle) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px 60px;
+    text-align: center;
+    color: var(--cream);
+    overflow: hidden;
+  }
+  .brand-kicker {
+    letter-spacing: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+  .hero-img-wrap {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--gold);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    margin-bottom: 26px;
+  }
+  .hero-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+  h1.title {
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    color: var(--cream);
+    line-height: 1.05;
+    margin-bottom: 12px;
+  }
+  .tagline {
+    font-size: 17px;
+    color: var(--cream);
+    opacity: 0.92;
+    max-width: 420px;
+    margin: 0 auto 6px;
+  }
+  .tagline-th {
+    font-size: 15px;
+    color: var(--gold);
+    opacity: 0.9;
+    margin-bottom: 32px;
+  }
+  .btn-yt {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--red);
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 18px 32px;
+    border-radius: 999px;
+    box-shadow: 0 10px 30px rgba(255,0,0,0.4);
+    transition: transform 0.15s ease;
+  }
+  .btn-yt:hover { transform: translateY(-2px); }
+  .btn-yt svg { width: 26px; height: 26px; }
+  .hero-note {
+    margin-top: 22px;
+    font-size: 13px;
+    color: var(--gold);
+    opacity: 0.85;
+  }
+
+  /* ===== SECTIONS ===== */
+  section { padding: 72px 24px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  .section-title {
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--jungle);
+  }
+  .section-sub {
+    text-align: center;
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  /* ===== FAMILY ===== */
+  .family { background: #fff; }
+  .family-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  @media (min-width: 640px) {
+    .family-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .fam-card {
+    background: var(--jungle);
+    color: var(--cream);
+    padding: 32px 24px;
+    border-radius: 18px;
+    text-align: center;
+    border: 2px solid var(--gold);
+  }
+  .fam-emoji { font-size: 48px; margin-bottom: 8px; }
+  .fam-name {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--gold);
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+  .fam-role {
+    font-size: 14px;
+    opacity: 0.85;
+  }
+
+  /* ===== VIDEOS ===== */
+  .videos { background: var(--cream); }
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  @media (min-width: 640px) {
+    .video-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  .video-card {
+    background: #000;
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 9 / 16;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  }
+  .video-card iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  /* ===== CATEGORIES ===== */
+  .categories { background: #fff; }
+  .cat-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  @media (min-width: 640px) {
+    .cat-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .cat-card {
+    padding: 28px 22px;
+    border-radius: 16px;
+    background: var(--cream);
+    border-left: 6px solid var(--gold);
+  }
+  .cat-emoji { font-size: 36px; margin-bottom: 10px; }
+  .cat-title {
+    font-weight: 900;
+    font-size: 17px;
+    margin-bottom: 6px;
+    color: var(--jungle);
+  }
+  .cat-desc {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+
+  /* ===== FINAL CTA ===== */
+  .cta-final {
+    background: var(--jungle);
+    color: var(--cream);
+    text-align: center;
+  }
+  .cta-final .section-title { color: var(--cream); }
+  .cta-final .section-sub { color: var(--gold); opacity: 0.85; margin-bottom: 32px; }
+  .socials {
+    margin-top: 34px;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .social-link {
+    padding: 10px 18px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(242,184,75,0.4);
+    border-radius: 999px;
+    font-size: 14px;
+    color: var(--cream);
+    font-weight: 600;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--jungle-2);
+    color: var(--cream);
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 13px;
+    opacity: 0.75;
+  }
+  footer a { color: var(--gold); font-weight: 700; }
+
+  /* Bigger screens: hero adjustments */
+  @media (min-width: 720px) {
+    h1.title { font-size: 60px; }
+    .hero-img-wrap { width: 260px; height: 260px; }
+    .tagline { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="brand-kicker">AVATAR GORILLA · THAILAND</div>
+  <div class="hero-img-wrap">
+    <img src="kong-hero.jpg" alt="Kong the gorilla in a pink suit at a Bangkok night market" />
+  </div>
+  <h1 class="title">Avatar Gorilla</h1>
+  <p class="tagline">Three gorilla siblings. One human world. Every day.</p>
+  <p class="tagline-th">อวตาร กอริลล่า — พี่น้องกอริลล่าที่ใช้ชีวิตแบบมนุษย์ในไทย</p>
+
+  <a class="btn-yt" href="https://www.youtube.com/@avatargorilla?sub_confirmation=1" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/>
+    </svg>
+    Subscribe on YouTube
+  </a>
+  <div class="hero-note">New AI comedy shorts almost every day 🦍</div>
+</header>
+
+<!-- ===== FAMILY ===== -->
+<section class="family">
+  <div class="container">
+    <h2 class="section-title">Meet the Family</h2>
+    <p class="section-sub">Three siblings. Three very different ways of surviving human life.</p>
+    <div class="family-grid">
+      <div class="fam-card">
+        <div class="fam-emoji">🦍</div>
+        <div class="fam-name">Kong</div>
+        <div class="fam-role">The older brother.<br/>Bold, curious, and always in the middle of something.</div>
+      </div>
+      <div class="fam-card">
+        <div class="fam-emoji">🦍</div>
+        <div class="fam-name">Joonie</div>
+        <div class="fam-role">The younger sister.<br/>Sharp, warm, and quietly the smartest in the room.</div>
+      </div>
+      <div class="fam-card">
+        <div class="fam-emoji">🦍</div>
+        <div class="fam-name">Rilla</div>
+        <div class="fam-role">The younger brother.<br/>Wide-eyed, playful, and full of unexpected reactions.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEOS ===== -->
+<section class="videos">
+  <div class="container">
+    <h2 class="section-title">Watch the Best</h2>
+    <p class="section-sub">Real Thai life. Real laughs. Fresh shorts almost every day.</p>
+    <div class="video-grid">
+      <!-- Placeholder embeds — replace VIDEO_ID with actual Shorts IDs -->
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=avatargorilla"
+                title="Avatar Gorilla latest uploads"
+                allow="accelerometer; encrypted-media; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+      <div class="video-card">
+        <a href="https://www.youtube.com/@avatargorilla/shorts" target="_blank" rel="noopener"
+           style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--cream);background:var(--jungle);font-weight:700;text-align:center;padding:20px;">
+          👉 See all Shorts<br/>on YouTube
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CATEGORIES ===== -->
+<section class="categories">
+  <div class="container">
+    <h2 class="section-title">What You'll Find</h2>
+    <p class="section-sub">Three playlists. Three moods.</p>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <div class="cat-emoji">🦍</div>
+        <div class="cat-title">Everyday Life in Thailand</div>
+        <div class="cat-desc">Bangkok streets, night markets, local food, and everyday chaos.</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-emoji">😅</div>
+        <div class="cat-title">Thai Social Satire</div>
+        <div class="cat-desc">Rising prices, street scams, taxi refusals — the funny side of real life.</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-emoji">❤️</div>
+        <div class="cat-title">Heartwarming Moments</div>
+        <div class="cat-desc">Friendship, family, kindness, and moments that stay with you.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="cta-final">
+  <div class="container">
+    <h2 class="section-title">Join Kong, Joonie & Rilla</h2>
+    <p class="section-sub">A new adventure in Thailand, almost every day.</p>
+    <a class="btn-yt" href="https://www.youtube.com/@avatargorilla?sub_confirmation=1" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/>
+      </svg>
+      Subscribe on YouTube
+    </a>
+    <div class="socials">
+      <a class="social-link" href="https://www.youtube.com/@avatargorilla" target="_blank" rel="noopener">▶ YouTube</a>
+      <a class="social-link" href="mailto:imroetaeck@gmail.com">✉ Contact</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2026 Avatar Gorilla · Made with 🦍 in Thailand</p>
+  <p style="margin-top:8px;">Contact: <a href="mailto:imroetaeck@gmail.com">imroetaeck@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
